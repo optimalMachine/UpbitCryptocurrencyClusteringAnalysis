@@ -1,173 +1,173 @@
-# 🚀 Upbit Cryptocurrency Clustering Analysis
+# 🚀 Upbit 암호화폐 클러스터링 분석
 
-## 📋 Project Overview
+## 📋 프로젝트 개요
 
-This project analyzes cryptocurrencies on **Upbit Exchange** using **machine learning clustering techniques** to group coins with similar characteristics and help construct **efficient investment portfolios**.
+이 프로젝트는 **업비트 거래소**의 암호화폐를 **머신러닝 클러스터링 기법**을 사용하여 분석하고, 유사한 특성을 가진 코인들을 그룹화하여 **효율적인 투자 포트폴리오** 구성을 돕습니다.
 
-### 🎯 Main Objectives
-- 📊 Analyze cryptocurrency market patterns
-- 🔍 Discover coin groups with similar characteristics
-- 💼 Suggest portfolio compositions for diversification
-- 📈 Develop risk-return based investment strategies
+### 🎯 주요 목표
+- 📊 암호화폐 시장 패턴 분석
+- 🔍 유사한 특성을 가진 코인 그룹 발견
+- 💼 분산투자를 위한 포트폴리오 구성 제안
+- 📈 위험-수익 기반 투자 전략 개발
 
-## 🛠️ Key Features
+## 🛠️ 주요 기능
 
-### 1. **Data Collection** 📥
-- Real-time data collection via Upbit API
-- 6-month (180 days) analysis using 4-hour candlesticks
-- Data quality validation and continuity checks
+### 1. **데이터 수집** 📥
+- Upbit API를 통한 실시간 데이터 수집
+- 4시간봉 기준 6개월(180일) 분석
+- 데이터 품질 검증 및 연속성 확인
 
-### 2. **Feature Analysis** 📊
-- **Return Metrics**: Mean returns, Sharpe ratio, Calmar ratio
-- **Risk Metrics**: Volatility, Maximum Drawdown (MDD), Skewness, Kurtosis
-- **Market Characteristics**: Positive return periods ratio, Session performance
-- **Period Analysis**: Intraday/Weekly volatility, Monthly trends
+### 2. **특성 분석** 📊
+- **수익률 지표**: 평균 수익률, 샤프 비율, 칼마 비율
+- **위험 지표**: 변동성, 최대 낙폭(MDD), 왜도, 첨도
+- **시장 특성**: 양의 수익률 기간 비율, 세션별 성과
+- **기간별 분석**: 일중/주간 변동성, 월별 추세
 
-### 3. **Clustering Analysis** 🎨
-- Coin grouping using K-means algorithm
-- Optimal cluster determination via Elbow Method and Silhouette Score
-- Visualization through PCA (Principal Component Analysis)
+### 3. **클러스터링 분석** 🎨
+- K-means 알고리즘을 사용한 코인 그룹화
+- Elbow Method와 실루엣 점수를 통한 최적 클러스터 결정
+- PCA(주성분 분석)를 통한 시각화
 
-### 4. **Visualization** 📈
-- 9 detailed analysis charts
-- Cluster-based feature heatmaps
-- Risk-return scatter plots
-- Correlation matrices
+### 4. **시각화** 📈
+- 9개의 상세 분석 차트
+- 클러스터별 특성 히트맵
+- 위험-수익 산점도
+- 상관관계 매트릭스
 
-### 5. **Portfolio Recommendations** 💡
-- Optimal coin selection from each cluster
-- Top performers based on Sharpe ratio
-- Diversification strategy suggestions
+### 5. **포트폴리오 추천** 💡
+- 각 클러스터에서 최적 코인 선정
+- 샤프 비율 기준 상위 종목 선택
+- 분산투자 전략 제안
 
-## 🚀 How to Use
+## 🚀 사용 방법
 
-### 1. Run on Google Colab
+### 1. Google Colab에서 실행
 ```python
-# Required libraries will be installed automatically
+# 필요한 라이브러리가 자동으로 설치됩니다
 !pip install pandas numpy matplotlib seaborn scikit-learn requests
 
-# Run the code
-# Copy and execute the entire code
+# 코드 실행
+# 전체 코드를 복사하여 실행하세요
 ```
 
-### 2. Select Analysis Options
+### 2. 분석 옵션 선택
 ```
-Select analysis option:
-1. Analyze all coins (time-consuming)
-2. Analyze top N coins only
-3. Analyze major coins only (recommended) ← Recommended for beginners
+분석 옵션을 선택하세요:
+1. 모든 코인 분석 (시간이 오래 걸림)
+2. 상위 N개 코인만 분석
+3. 주요 코인만 분석 (권장) ← 초보자에게 권장
 ```
 
-### 3. Review Results
-- 📊 Check coin groups by cluster
-- 📈 Analyze visualization charts
-- 💼 Review recommended portfolio
-- 💾 Save results as CSV files
+### 3. 결과 확인
+- 📊 클러스터별 코인 그룹 확인
+- 📈 시각화 차트 분석
+- 💼 추천 포트폴리오 검토
+- 💾 CSV 파일로 결과 저장
 
-## 📊 Example Output
+## 📊 출력 예시
 
-### Clustering Analysis Results
+### 클러스터링 분석 결과
 ```
-📊 Clustering Analysis Results:
+📊 클러스터링 분석 결과:
 ============================================================
-Optimal number of clusters: 4 (Silhouette Score: 0.421)
+최적 클러스터 수: 4 (실루엣 점수: 0.421)
 
-🔍 Coin Groups by Cluster:
+🔍 클러스터별 코인 그룹:
 ============================================================
-Cluster 0 (8 coins):
-  Coins: BTC, ETH, BCH, LTC, ETC, NEO, QTUM, XLM
-  - Average 4H return: 0.0234%
-  - Average volatility: 1.2345%
-  - Average Sharpe ratio: 0.8234
+클러스터 0 (8개 코인):
+  코인: BTC, ETH, BCH, LTC, ETC, NEO, QTUM, XLM
+  - 평균 4시간 수익률: 0.0234%
+  - 평균 변동성: 1.2345%
+  - 평균 샤프 비율: 0.8234
 ```
 
-### Recommended Portfolio
+### 추천 포트폴리오
 ```
-🎲 Sample Portfolio Composition (10 coins):
-  1. BTC (Sharpe ratio: 0.892, Volatility: 1.23%)
-  2. ETH (Sharpe ratio: 0.845, Volatility: 1.45%)
-  3. ADA (Sharpe ratio: 0.734, Volatility: 1.89%)
+🎲 샘플 포트폴리오 구성 (10개 코인):
+  1. BTC (샤프 비율: 0.892, 변동성: 1.23%)
+  2. ETH (샤프 비율: 0.845, 변동성: 1.45%)
+  3. ADA (샤프 비율: 0.734, 변동성: 1.89%)
   ...
 ```
 
-## 📁 Output Files
+## 📁 출력 파일
 
-The program generates 3 CSV files after execution:
+프로그램 실행 후 3개의 CSV 파일이 생성됩니다:
 
 1. **`upbit_clustering_result_YYYYMMDD_HHMMSS.csv`**
-   - Cluster assignment information for each coin
+   - 각 코인의 클러스터 할당 정보
 
 2. **`upbit_coin_features_YYYYMMDD_HHMMSS.csv`**
-   - Detailed feature data for all coins
+   - 모든 코인의 상세 특성 데이터
 
 3. **`upbit_recommended_portfolio_YYYYMMDD_HHMMSS.csv`**
-   - Recommended portfolio composition
+   - 추천 포트폴리오 구성
 
-## 📈 Chart Explanations
+## 📈 차트 설명
 
 ### 1. Elbow Method
-- Chart for finding optimal cluster number
-- "Elbow" point indicates optimal clusters
+- 최적 클러스터 수를 찾기 위한 차트
+- "팔꿈치" 지점이 최적 클러스터 수
 
-### 2. Silhouette Score
-- Clustering quality evaluation
-- Closer to 1 means better clustering
+### 2. 실루엣 점수
+- 클러스터링 품질 평가
+- 1에 가까울수록 좋은 클러스터링
 
-### 3. PCA Cluster Visualization
-- High-dimensional data reduced to 2D
-- Same color = same cluster
+### 3. PCA 클러스터 시각화
+- 고차원 데이터를 2차원으로 축소
+- 같은 색상 = 같은 클러스터
 
-### 4. Feature Heatmap
-- Coin features represented by colors
-- Red: high values, Blue: low values
+### 4. 특성 히트맵
+- 코인별 특성을 색상으로 표현
+- 빨간색: 높은 값, 파란색: 낮은 값
 
-### 5. Cluster Mean Features
-- Quick overview of each cluster's characteristics
+### 5. 클러스터 평균 특성
+- 각 클러스터의 특징을 한눈에 파악
 
-### 6. Risk-Return Scatter Plot
-- X-axis: Volatility (Risk)
-- Y-axis: Mean Returns
-- Top-left is ideal (low risk, high return)
+### 6. 위험-수익 산점도
+- X축: 변동성 (위험)
+- Y축: 평균 수익률
+- 좌측 상단이 이상적 (낮은 위험, 높은 수익)
 
-### 7. Returns Distribution Boxplot
-- Compare return distributions by cluster
-- Box centerline: median
+### 7. 수익률 분포 박스플롯
+- 클러스터별 수익률 분포 비교
+- 상자 중앙선: 중간값
 
-### 8. Correlation Matrix
-- Price movement correlation between coins
-- Closer to 1 means similar movements
+### 8. 상관관계 매트릭스
+- 코인 간 가격 움직임 상관관계
+- 1에 가까울수록 유사한 움직임
 
-### 9. Cluster Size Distribution
-- Number and percentage of coins in each cluster
+### 9. 클러스터 크기 분포
+- 각 클러스터의 코인 수와 비율
 
-## ⚠️ Important Notes
+## ⚠️ 주의사항
 
-1. **API Limits**: Upbit API has rate limits
-2. **Execution Time**: Full analysis takes 30-60 minutes
-3. **Network**: Stable internet connection required
-4. **Data Interpretation**: Based on historical data, doesn't guarantee future returns
+1. **API 제한**: Upbit API는 요청 속도 제한이 있습니다
+2. **실행 시간**: 전체 분석은 30-60분 소요됩니다
+3. **네트워크**: 안정적인 인터넷 연결이 필요합니다
+4. **데이터 해석**: 과거 데이터 기반이며 미래 수익을 보장하지 않습니다
 
-## 🔧 Tech Stack
+## 🔧 기술 스택
 
 - **Python 3.x**
-- **Pandas**: Data processing
-- **NumPy**: Numerical computations
-- **Scikit-learn**: Machine learning (K-means, PCA)
-- **Matplotlib/Seaborn**: Data visualization
-- **Requests**: API communication
+- **Pandas**: 데이터 처리
+- **NumPy**: 수치 연산
+- **Scikit-learn**: 머신러닝 (K-means, PCA)
+- **Matplotlib/Seaborn**: 데이터 시각화
+- **Requests**: API 통신
 
-## 💡 Usage Tips
+## 💡 활용 팁
 
-### For Beginners
-1. Start with "3. Analyze major coins only" option
-2. Build portfolio with coins from different clusters
-3. Include BTC, ETH for stability
+### 초보자용
+1. "3. 주요 코인만 분석" 옵션으로 시작
+2. 서로 다른 클러스터의 코인으로 포트폴리오 구성
+3. 안정성을 위해 BTC, ETH 포함
 
-### For Advanced Users
-1. Analyze all coins to find hidden gems
-2. Use feature CSV data for further analysis
-3. Develop hedging strategies considering cluster correlations
+### 고급 사용자용
+1. 모든 코인 분석으로 숨은 보석 찾기
+2. 특성 CSV 데이터로 추가 분석 수행
+3. 클러스터 상관관계를 고려한 헤징 전략 개발
 
 ---
 
-**⚡ Disclaimer**: This tool is not investment advice, and all investment decisions are at your own risk. Cryptocurrencies are high-risk assets with high volatility.
+**⚡ 면책조항**: 이 도구는 투자 조언이 아니며, 모든 투자 결정은 본인의 책임입니다. 암호화폐는 변동성이 높은 고위험 자산입니다.
